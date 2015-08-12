@@ -1,60 +1,17 @@
 doctype html
 html(lang="en")
   head
-    title
-    link(href='/css/app.css', rel='stylesheet')
+    include head.jade
   body
     header
-      .top_line
-      .header
-        .wrapper
-          .left
-            .logo
-              <a href="/">
-                <img src="logo.png" ... />
-              </a>
-            .logo_hr
-            .logo_slogan 
-              | Профессиональная униформа
-          .right
-            .menu
-             ul
-              li 
-                a Скачать каталог   
-              li 
-                a Доставка  
-              li 
-                a Опата 
-              li 
-                a Возврат 
-              li 
-                a Контакты 
-              li 
-                a Помощь 
-            .info
-              .left
-                .phone
-                  | 8 (800) 775-93-60
-                .phone_slogan
-                  | Звонок по России бесплатный
-                .feedback
-                  | Обратная связь
-              .center
-                .phone
-                  | +7 (499) 685-17-79
-                .phone_slogan
-                  | Москва (10.00-18.00, пн-пт)
-                .scheme
-                  | Схема проезда
-              .right
-                .room
-                  a
-                    | Личный кабинет
-                .bucket
-                  .title
-                    | Корзина
-                  .bucket_slogan
-                    | нет товаров
+      include header.jade 
+    content
+      include content.jade
+    footer
+      include footer.jade
+    
+    
+    
                     
                     
                 
